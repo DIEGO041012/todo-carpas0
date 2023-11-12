@@ -44,6 +44,9 @@ img {
 .white-bg {
   background-color: var(--white);
 }
+#headingSmall{
+  font-size: 75px;
+}
 .black-bg {
   background-color: var(--black);
 }
