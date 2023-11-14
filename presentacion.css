@@ -50,20 +50,21 @@ img {
 .black-bg {
   background-color: var(--black);
 }
-h2.title {
+.title {
   font-size: 100px;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
-  color: rgba(230, 19, 19, 0.06);
+  color: rgb(222, 6, 6);
   text-transform: uppercase;
+  opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
   position: absolute;
-  top: -40px;
+  top: -1vh;
+  z-index: 2; /* Ajusta el índice z para que esté sobre todos los elementos */
   left: 0;
   width: 100%;
-  user-select: none;
-  pointer-events: none;
 }
+
 p {
   margin: 0 0 24px;
   font-weight: 400;
@@ -120,10 +121,6 @@ p {
 }
 .common-btn img {
   width: 24px;
-}
-/* dark theme */
-.theme-dark h2.title {
-  color: rgb(255 255 255 / 8%);
 }
 .theme-dark P {
   color: var(--color-2);
@@ -470,7 +467,7 @@ p {
   .container {
     max-width: 960px;
   }
-  h2.title {
+  .title {
     font-size: 148px;
     top: -20px;
   }
